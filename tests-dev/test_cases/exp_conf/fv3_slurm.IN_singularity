@@ -51,7 +51,7 @@ if [ "${JOB_SHOULD_FAIL:-NO}" = WHEN_RUNNING ] ; then
 fi
 
 ###srun --mpi=pmi2 --label -n @[TASKS] ./fv3.exe
-mpiexec -n @[TASKS] ./fv3.exe
+mpiexec -n @[TASKS] ./fv3_${COMPILE_ID}.exe
 
 echo "Model ended:    " `date`
 echo -n " $( date +%s )," >> job_timestamp.txt
