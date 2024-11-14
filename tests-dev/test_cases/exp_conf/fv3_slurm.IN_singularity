@@ -20,7 +20,7 @@ export MACHINE_ID=singularity
 #fi
 #module use modulefiles
 #module load modules.fv3
-module load COMPILER MPI
+module load USER_COMPILER USER_MPI
 module list
 
 set -x
