@@ -89,7 +89,8 @@ cd "${RUNDIR}"
 
 # FV3 executable:
 cp "${PATHRT}/fv3_${COMPILE_ID}.exe" "fv3.exe"
-
+# Create wrapper script
+make-external ./fv3.exe
 # modulefile for FV3 prerequisites:
 mkdir -p modulefiles
 if [[ ${MACHINE_ID} == linux ]]; then
