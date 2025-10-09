@@ -29,6 +29,7 @@ usage() {
   echo "  -w  for weekly_test, skip comparing baseline results"
   echo
 }
+
 [[ $# -eq 0 ]] && usage
 
 update_rtconf() {
@@ -805,9 +806,7 @@ case ${MACHINE_ID} in
       ECF_PORT="$(( $(id -u) + 1500 ))"
       export ECF_HOST ECF_PORT
     fi
-    # Load make-external
-    module use /scratch3/NCEPDEV/nems/Edward.Snyder/ss-192-cont/new/modulefiles/spack-stack-1.9.2/Core
-    module load stack-oneapi
+    
     QUEUE="batch"
     COMPILE_QUEUE="batch"
 
