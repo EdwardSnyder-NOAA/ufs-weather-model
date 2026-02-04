@@ -4,8 +4,8 @@ loads UFS Model prerequisites for Ursa/Intel
 
 --prepend_path("MODULEPATH", "/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/Core")
 --prepend_path("MODULEPATH", "/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/intel-oneapi-mpi/2021.13-haww6b3/gcc/12.4.0")
-prepend_path("MODULEPATH", "/scratch3/NCEPDEV/nems/Edward.Snyder/ss-192-cont/new/modulefiles/spack-stack-1.9.2/Core")
-prepend_path("MODULEPATH", "/scratch3/NCEPDEV/nems/Edward.Snyder/ss-192-cont/new/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
+prepend_path("MODULEPATH", "/contrib/spack-stack/containerized/envs/ue-oneapi-2024.2.0-host/modulefiles/spack-stack-1.9.2/Core")
+prepend_path("MODULEPATH", "/contrib/spack-stack/containerized/envs/ue-oneapi-2024.2.0-host/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
 
 stack_oneapi_ver=os.getenv("stack_oneapi_ver") or "2024.2.0"
 load(pathJoin("stack-oneapi", stack_oneapi_ver))
