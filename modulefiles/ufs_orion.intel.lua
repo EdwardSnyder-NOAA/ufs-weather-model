@@ -4,8 +4,8 @@ loads UFS Model prerequisites for Orion/Intel
 
 --prepend_path("MODULEPATH", "/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/Core")
 --prepend_path("MODULEPATH", "/apps/contrib/spack-stack/spack-stack-1.9.2/envs/ue-oneapi-2024.1.0/install/modulefiles/intel-oneapi-mpi/2021.13-li242lf/gcc/12.2.0")
-prepend_path("MODULEPATH", "/work/noaa/epic/esnyder/ss-192-cont/modulefiles/spack-stack-1.9.2/Core")
-prepend_path("MODULEPATH", "/work/noaa/epic/esnyder/ss-192-cont/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
+prepend_path("MODULEPATH", "/work/noaa/epic/role-epic/spack-stack/containerization/envs/ue-oneapi-2024.2.0-host/modulefiles/spack-stack-1.9.2/Core")
+prepend_path("MODULEPATH", "/work/noaa/epic/role-epic/spack-stack/containerization/envs/ue-oneapi-2024.2.0-host/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
 
 stack_intel_ver=os.getenv("stack_intel_ver") or "2024.2.0"
 load(pathJoin("stack-oneapi", stack_intel_ver))
