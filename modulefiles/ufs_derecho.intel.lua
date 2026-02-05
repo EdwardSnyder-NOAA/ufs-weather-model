@@ -5,8 +5,8 @@ loads UFS Model prerequisites for NOAA Parallelworks/Intel
 setenv("LMOD_TMOD_FIND_FIRST","yes")
 --prepend_path("MODULEPATH", "/glade/work/epicufsrt/contrib/spack-stack/derecho/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/Core")
 --prepend_path("MODULEPATH", "/glade/work/epicufsrt/contrib/spack-stack/derecho/spack-stack-1.9.2/envs/ue-oneapi-2024.2.1/install/modulefiles/cray-mpich/8.1.29-3sepg3g/gcc/12.4.0")
-prepend_path("MODULEPATH", "/glade/work/esnyder/ss-192-cont/final/modulefiles/spack-stack-1.9.2/Core")
-prepend_path("MODULEPATH", "/glade/work/esnyder/ss-192-cont/final/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
+prepend_path("MODULEPATH", "/glade/work/epicufsrt/contrib/spack-stack/containerized/envs/ue-oneapi-2024.2.0-sandbox/modulefiles/spack-stack-1.9.2/Core")
+prepend_path("MODULEPATH", "/glade/work/epicufsrt/contrib/spack-stack/containerized/envs/ue-oneapi-2024.2.0-sandbox/modulefiles/spack-stack-1.9.2/intel-oneapi-mpi/2021.13-argr3sd/gcc/11.4.0")
 
 --unload("ncarcompilers")
 stack_intel_ver=os.getenv("stack_intel_ver") or "2024.2.0"
